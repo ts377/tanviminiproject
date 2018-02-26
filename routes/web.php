@@ -48,3 +48,6 @@ Route::post('/ViewMessages', function () {
 Route::get('/Message', function () {
     return view('pages.Message');
 });
+Route::get('/Message1', function () {
+    return view('pages.Message1');
+});

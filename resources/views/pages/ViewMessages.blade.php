@@ -23,7 +23,7 @@
                 <tr>
 
                     <td><li class="nav-item">
-                            <a  href="/Message">Message from Miss Julie</a>
+                            <a  href="/Message1">Message from Miss Julie</a>
                         </li></td>
                     <td><button type="delete" class="btn btn-primary mb-2">Delete</button></td>
                 </tr>
