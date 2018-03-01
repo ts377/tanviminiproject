@@ -7,23 +7,27 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{{route('index')}}">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/about">About</a>
+                <a class="nav-link" href="{{route('about')}}">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/contact">Contact</a>
+                <a class="nav-link" href="{{route('contact')}}">Contact</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/SignUp">SignUp</a>
+                <a class="nav-link" href="{{route('thanks',['name' => 'IS601' ])}}">Thanks</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/Signin">SignIn</a>
+                <a class="nav-link" href="{{route('SignUp')}}">SignUp</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/ViewMessages">ViewMessages</a>
+                <a class="nav-link" href="{{route('Signin')}}">SignIn</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('ViewMessages')}}">ViewMessages</a>
+            </li>
+
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown01">

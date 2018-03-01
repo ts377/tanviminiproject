@@ -11,43 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.index');
-});
-Route::get('/about', function () {
-    return view('pages.about');
-});
-Route::get('/contact', function () {
-    return view('pages.contact');
-});
-Route::post('/contact', function () {
-    $data= request()->all();
-    dd($data);
-});
-Route::get('/Signin', function () {
-    return view('pages.Signin');
-});
-Route::post('/Signin', function () {
-    $data1= request()->all();
-    dd($data1);
-});
-Route::get('/SignUp', function () {
-    return view('pages.SignUp');
-});
-Route::post('/SignUp', function () {
-    $data2= request()->all();
-    dd($data2);
-});
-Route::get('/ViewMessages', function () {
-    return view('pages.ViewMessages');
-});
-Route::post('/ViewMessages', function () {
-    $data2 = request()->all();
-    dd($data2);
-});
-Route::get('/Message', function () {
-    return view('pages.Message');
-});
-Route::get('/Message1', function () {
-    return view('pages.Message1');
-});
+Route::get('/' , 'PagesController@home')->name('index');
+Route::get('/about', 'PagesController@about')->name('about');
+Route::get('/contact', 'PagesController@contact')->name('contact');
+Route::post('/contact', 'PagesController@store')->name('contact.store');
+Route::get('/thanks/{name}', 'PagesController@thanks')->name('thanks');
+Route::get('/Signin', 'PagesController@Signin')->name('Signin');
+Route::get('/SignUp', 'PagesController@SignUp')->name('SignUp');
+Route::get('/ViewMessages', 'PagesController@ViewMessages')->name('ViewMessages');
+Route::get('/Message', 'PagesController@Message')->name('Message');
+Route::get('/Message1', 'PagesController@Message1')->name('Message1');
